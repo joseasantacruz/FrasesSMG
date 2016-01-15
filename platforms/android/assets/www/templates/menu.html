@@ -1,0 +1,46 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h2 style="color: black  ;font-size: 160%; text-align : center;background-color: transparent;">Menu</h2>
+    </ion-header-bar>
+    <ion-content ng-controller="FrasesCtrl">
+      <div class="list">
+
+		  <a id="menu1" class="item item-icon-left menu-close" href="#/app/freses" ng-click="menuFrases()">
+			<i class="icon ion-android-create"></i>
+			<p   style="color: black  ; vertical-align: middle; font-size: 100%; background-color: transparent;" > Frases</p>
+		  </a>
+
+		  <a id="menu2" class="item item-icon-left item-icon-right menu-close" href="#/app/sanmiguel" ng-click="menuSMG()">
+			<i class="icon ion-ios-filing"></i>
+			<p style="color: black  ;  vertical-align: middle; font-size: 100%; background-color: transparent;" >Vida de San Miguel</p>
+		  </a>
+
+		  <a id="menu3" class="item item-icon-left menu-close" href="#/app/fvd" ng-click="menuFVD()">
+			<i class="icon ion-ios-home"></i>
+			<p style="color: black  ; vertical-align: middle; font-size: 100%; background-color: transparent;">Acerca del Grupo FVD</p>
+		  </a>
+
+		  <a id="menu4" class="item item-icon-left menu-close" href="#/app/desa" ng-click="menuDesa()">
+			<i class="icon ion-ios-people"></i>
+			 <p style="color: black  ;vertical-align: middle; font-size: 100%; background-color: transparent;">Desarrollo</p>
+		  </a>
+
+				
+	</div >		  
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

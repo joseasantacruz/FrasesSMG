@@ -1,0 +1,174 @@
+/* Empty. Add your own CSS if you like */
+.fvd {
+        background-color: White;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+}
+ 
+.smg {
+        background-color: White   ;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+}
+.freses { 
+	background-color: black   ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.desa {
+        background-color: black;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+}
+p.freses2 {
+    color: white  ;
+	font-family:helvetica;
+	font-weight: 100;
+	font-style: italic;
+    font-size: 130%;
+	visibility : hidden  ;
+	-webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all; 
+	display: block;
+	pointer-events: none;
+	text-align : justify;
+}
+p.freses22 {
+    color: white  ;
+	font-family: helvetica;
+	font-style: italic;
+    font-size: 120%;
+	visibility : hidden  ;
+	-webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text; 
+	display: block;
+	pointer-events: none;
+}
+p.freses21 {
+    color: black  ;
+	font-family: helvetica;
+    font-size: 100%;
+	height: 20px;
+	line-height: 28px;
+	text-align : justify;
+    vertical-align: middle;
+	align-content: center;
+	
+	font-weight: bold;
+}
+h2.freses2 {
+    color: Tomato  ;
+	font-family: helvetica;
+    font-size: 160%; 
+	font-weight: bold;
+}
+button.freses2 {
+    vertical-align: middle;
+	text-align : justify;
+	background-color: white;
+	align-content: center;
+	display: inline-block;
+	text-decoration: none;
+}
+p.fvd {
+	color: black ;
+	font-family: helvetica;
+	font-size: 110%;
+	align-content: center;
+	text-align : justify;
+}
+a.fvd {
+	color: black ;
+	font-family: helvetica;
+	font-size: 110%;
+	align-content: center;
+	text-align : justify;
+}
+h2.fvd {
+    color: black  ;
+	font-family: helvetica;
+    font-size: 160%; 
+	font-weight: bold;	
+	text-align : center;
+	background-color: transparent;
+}
+p.smg {
+    color: black  ;
+	font-family: verdana;
+    font-size: 100%;
+	align-content: center;
+	text-align : justify;
+}
+h2.smg {
+    color: DarkGray ;
+	font-family: verdana;
+    font-size: 200%;
+	font-weight: bold;
+	text-align : center;
+}
+p.desa {
+	color: white ;
+	font-family: helvetica;
+	font-size: 110%;
+	align-content: center;
+	text-align : justify;
+}
+h2.menu {
+    color: black  ;
+	font-family: verdana;
+    font-size: 160%; 
+	font-weight: bold;	
+	text-align : center;
+	background-color: transparent;
+}
+p.menu {
+    color: black  ;
+	font-weight: bold;	
+    vertical-align: middle;
+    font-size: 125%;
+	background-color: transparent;
+}
+a.menu {
+    color: black  ;
+	font-weight: bold;	
+    vertical-align: middle;
+    font-size: 125%;
+	background-color: transparent;
+}
+@font-face {
+    font-family: f1;
+    src: url("SaginawLight.ttf");
+}
+@font-face {
+    font-family: f2;
+    src: url("High_Thin_LIGHT.ttf");
+}
+@font-face {
+    font-family: f3;
+    src: url("GeosansLight.ttf");
+}
+@font-face {
+    font-family: f4;
+    src: url("Aller_Lt.ttf");
+}
+@font-face {
+    font-family: helvetica;
+    src: url("HelveticaNeue-Light.otf");
+}
+@font-face {
+    font-family: f6;
+    src: url("Geoma_Thin_Demo.otf");
+}
+@font-face {
+    font-family: f7;
+    src: url("Ailerons-Typeface.otf");
+}
+
