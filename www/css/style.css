@@ -12,7 +12,7 @@
   -moz-background-size: cover;
   background-size: cover;
 }
-.freses { 
+.freses {
   background-color: black   ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -66,7 +66,7 @@ p.freses21 {
 h2.freses2 {
   color: Tomato  ;
   font-family: helvetica;
-  font-size: 160%; 
+  font-size: 160%;
   font-weight: bold;
 }
 button.freses2 {
@@ -82,8 +82,8 @@ p.fvd {
   font-family: helvetica;
   font-size: 110%;
   align-content: center;
-  text-align : justify; 
-  padding-right: 20px; 
+  text-align : justify;
+  padding-right: 20px;
   padding-left: 20px;
 }
 a.fvd {
@@ -96,8 +96,8 @@ a.fvd {
 h2.fvd {
   color: black  ;
   font-family: helvetica;
-  font-size: 160%; 
-  font-weight: bold;	
+  font-size: 160%;
+  font-weight: bold;
   text-align : center;
   background-color: transparent;
   padding-top: 20px;
@@ -108,8 +108,8 @@ h2.fvd {
 h2.fvd1 {
   color: black  ;
   font-family: helvetica;
-  font-size: 160%; 
-  font-weight: bold;	
+  font-size: 160%;
+  font-weight: bold;
   text-align : center;
   background-color: transparent;
   height: 20px;
@@ -143,21 +143,21 @@ p.desa {
 h2.menu {
   color: black  ;
   font-family: verdana;
-  font-size: 160%; 
-  font-weight: bold;	
+  font-size: 160%;
+  font-weight: bold;
   text-align : center;
   background-color: transparent;
 }
 p.menu {
   color: black  ;
-  font-weight: bold;	
+  font-weight: bold;
   vertical-align: middle;
   font-size: 125%;
   background-color: transparent;
 }
 a.menu {
   color: black  ;
-  font-weight: bold;	
+  font-weight: bold;
   vertical-align: middle;
   font-size: 125%;
   background-color: transparent;
@@ -191,3 +191,13 @@ a.menu {
   src: url("Ailerons-Typeface.otf");
 }
 
+.menu-item-text {
+   color            : black !important;
+   vertical-align   : middle !important;
+   font-size        : 100% !important;
+   background-color : transparent;
+}
+
+.menu-selected {
+   background-color: #E3E3E3 !important;
+}
