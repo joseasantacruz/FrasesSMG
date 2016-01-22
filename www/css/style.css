@@ -83,7 +83,9 @@ p.fvd {
 	font-family: helvetica;
 	font-size: 110%;
 	align-content: center;
-	text-align : justify;
+	text-align : justify; 
+    padding-right: 20px; 
+    padding-left: 20px;
 }
 a.fvd {
 	color: black ;
@@ -99,6 +101,20 @@ h2.fvd {
 	font-weight: bold;	
 	text-align : center;
 	background-color: transparent;
+	padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+h2.fvd1 {
+    color: black  ;
+	font-family: helvetica;
+    font-size: 160%; 
+	font-weight: bold;	
+	text-align : center;
+	background-color: transparent;
+	height: 20px;
+	line-height: 40px;
 }
 p.smg {
     color: black  ;
@@ -106,6 +122,10 @@ p.smg {
     font-size: 100%;
 	align-content: center;
 	text-align : justify;
+}
+
+div.smg1 {
+	visibility : hidden  ;
 }
 h2.smg {
     color: DarkGray ;
