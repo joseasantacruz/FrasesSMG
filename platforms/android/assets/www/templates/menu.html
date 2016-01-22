@@ -16,31 +16,30 @@
     <ion-header-bar class="bar-stable">
       <h2 style="color: black  ;font-size: 160%; text-align : center;background-color: transparent;">Menu</h2>
     </ion-header-bar>
-    <ion-content ng-controller="FrasesCtrl">
+    <ion-content ng-controller="MenuController">
       <div class="list">
 
-		  <a id="menu1" class="item item-icon-left menu-close" href="#/app/freses" ng-click="menuFrases()">
-			<i class="icon ion-android-create"></i>
-			<p   style="color: black  ; vertical-align: middle; font-size: 100%; background-color: transparent;" > Frases</p>
-		  </a>
+      <a id="menu1" class="item item-icon-left menu-close {{ getClass('freses') }}" href="#/app/freses">
+        <i class="icon ion-ios-email"></i>
+        <p class="menu-item-text"> Frases</p>
+      </a>
 
-		  <a id="menu2" class="item item-icon-left item-icon-right menu-close" href="#/app/sanmiguel" ng-click="menuSMG()">
-			<i class="icon ion-ios-filing"></i>
-			<p style="color: black  ;  vertical-align: middle; font-size: 100%; background-color: transparent;" >Vida de San Miguel</p>
-		  </a>
+      <a id="menu2" class="item item-icon-left menu-close {{ getClass('sanmiguel') }}" href="#/app/sanmiguel">
+        <i class="icon ion-ribbon-b"></i>
+        <p class="menu-item-text">Vida de San Miguel</p>
+      </a>
 
-		  <a id="menu3" class="item item-icon-left menu-close" href="#/app/fvd" ng-click="menuFVD()">
-			<i class="icon ion-ios-home"></i>
-			<p style="color: black  ; vertical-align: middle; font-size: 100%; background-color: transparent;">Acerca del Grupo FVD</p>
-		  </a>
+      <a id="menu3" class="item item-icon-left menu-close {{ getClass('fvd') }}" href="#/app/fvd">
+        <i class="icon ion-ios-home"></i>
+        <p class="menu-item-text">Acerca del Grupo FVD</p>
+      </a>
 
-		  <a id="menu4" class="item item-icon-left menu-close" href="#/app/desa" ng-click="menuDesa()">
-			<i class="icon ion-ios-people"></i>
-			 <p style="color: black  ;vertical-align: middle; font-size: 100%; background-color: transparent;">Desarrollo</p>
-		  </a>
+      <a id="menu4" class="item item-icon-left menu-close {{ getClass('desa') }}" href="#/app/desa">
+        <i class="icon ion-ios-people"></i>
+        <p class="menu-item-text">Desarrollo</p>
+      </a>
 
-				
-	</div >		  
+  </div >
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>

@@ -137,4 +137,25 @@ angular.module('starter.controllers', [])
 
     }
   };
+  
+  $scope.bot11='ion-chevron-down';
+	$scope.texto11='';
+	$scope.fvd11 = function(){
+		if ($scope.bot11=='ion-chevron-down'){
+			$scope.bot11='ion-chevron-up';
+			$scope.texto11='<p class="fvd" >El Grupo FVD nace en el año 2003 como una comunidad de jóvenes llamados a profundizar en el Carisma de San Miguel Garicoïts, Fundador de la Sociedad de Sacerdotes del Sagrado Corazón de Jesús de Betharram.<br><br>El domingo 14 de Septiembre del año 2003, un grupo de 7 jóvenes laicos (Juan Sebastián Villarejo, Juan Manuel Talavera, Horacio Campos Angulo, Thomas Brown Mateo, Sergio Sánchez Boettner, César Enrique Prous y Alejandro Brown Mateo), motivados por la Sra. Elena Ibáñez de Careaga (Nita) y acompañados espiritualmente por el R.P. Emiliano Jara Medina, SCJ., luego de una jornada completa de convivencia en la casa de la Comunidad de Padres Betharramitas del Colegio San José (Asunción - Paraguay) instituyen oficialmente la fundación del Grupo FVD con 3 objetivos:</p ><br><p class="fvd">1. Conocer, Vivenciar y Difundir el Carisma Betharramita.<br><br>2. Colaborar con la Pastoral Betharramita.<br><br>3. Alentar las vocaciones a la Vida Religiosa o Sacerdotal, en especial para Betharram.</p> ';
+			scope.$broadcast('scroll.refreshComplete');
+			$scope.$apply();
+		}
+		if ($scope.bot11=='ion-chevron-up'){ 
+			$scope.bot11='ion-chevron-down';
+			$scope.texto11='';
+			scope.$broadcast('scroll.refreshComplete');
+			$scope.$apply();
+			
+		}
+	}
+
 });
+
+

@@ -1,38 +1,45 @@
 
 <ion-view view-title="Frases de San Miguel"  >
 
-  <ion-content class="freses" ng-controller="FrasesCtrl">
- 
-  <div class="container" width=device-width height=device-height>
-	  <BR>
-	  <div class="row row-center"  >
-			<div class="col col-center">
-		<center> <img src="img/smg_contorno_transparente.png" width="65%" height="65%"> </center> 
-		</div> 
-		</div>
-		<br>
-		<div class="row"  >
-			<div class="col   "><center><button type="button" class="btn btn-xs" ng-click="visualizarFrase()"> 
-			  <p  class="freses21">GENERAR FRASE</p> 
-			  </button></center>  
-			  </div>
-		</div>
-		
-		<div class="row row-center"  >
-			<div class="col  col-center ">	
-			
-				<p  id="frase1" class="freses2"> <br> </p>  
-				
-	  </div> 
-		</div>
-		<div class="row row-center"  >
-			<div class="col  col-center ">
-		<center><p  id="frase11" class="freses22">S.M.G.</p></center>
-		</div> 
-		</div>
-		
-	</div>
-	
-	
-  </ion-content>
+<ion-content class="freses" ng-controller="FrasesCtrl">
+
+<div class="container" width=device-width height=device-height>
+  <BR>
+  <div class="row row-center"  >
+    <div class="col col-center">
+      <center> <img src="img/smg_contorno_transparente.png" width="65%" height="65%"> </center>
+    </div>
+  </div>
+  <br>
+  <div class="row"  >
+    <div class="col">
+      <center>
+        <button type="button" 
+                class="button button-stable" 
+                ng-click="visualizarFrase()">
+          <p class="freses21">GENERAR FRASE</p>
+        </button>
+      </center>
+    </div>
+  </div>
+
+  <div class="row row-center">
+    <div class="col col-center">
+      <p id="frase1" class="freses2">
+        {{ frase }}
+      </p>
+    </div>
+  </div>
+  <div class="row row-center">
+    <div class="col col-center" ng-show="frase">
+      <center>
+        <p id="frase11" class="freses22">S.M.G.</p>
+      </center>
+    </div>
+  </div>
+
+</div>
+
+
+</ion-content>
 </ion-view>
