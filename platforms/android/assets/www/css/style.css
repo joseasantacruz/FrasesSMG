@@ -24,26 +24,11 @@
   -moz-background-size: cover;
   background-size: cover;
 }
+
 p.freses2 {
   color               : white;
   font-family         : helvetica;
-  font-weight         : 100;
-  font-style          : italic;
   font-size           : 130%;
-  -webkit-user-select : all;
-  -moz-user-select    : all;
-  -ms-user-select     : all;
-  user-select         : all;
-  display             : block;
-  pointer-events      : none;
-  text-align          : justify;
-}
-
-p.freses22 {
-  color               : white;
-  font-family         : helvetica;
-  font-style          : italic;
-  font-size           : 120%;
   -webkit-user-select : text;
   -moz-user-select    : text;
   -ms-user-select     : text;
@@ -52,9 +37,9 @@ p.freses22 {
   pointer-events      : none;
 }
 p.freses21 {
-  color: black  ;
-  font-family: helvetica;
-  font-size: 100%;
+  color: white  ;
+  font-family: DJB;
+  font-size: 200%;
   height: 20px;
   line-height: 28px;
   text-align : justify;
@@ -136,7 +121,7 @@ h2.smg {
 p.desa {
   color: white ;
   font-family: helvetica;
-  font-size: 110%;
+  font-size: 120%;
   align-content: center;
   text-align : justify;
 }
@@ -163,33 +148,14 @@ a.menu {
   background-color: transparent;
 }
 @font-face {
-  font-family: f1;
-  src: url("SaginawLight.ttf");
-}
-@font-face {
-  font-family: f2;
-  src: url("High_Thin_LIGHT.ttf");
-}
-@font-face {
-  font-family: f3;
-  src: url("GeosansLight.ttf");
-}
-@font-face {
-  font-family: f4;
-  src: url("Aller_Lt.ttf");
+  font-family: DJB;
+  src: url("DJB The Generic.ttf");
 }
 @font-face {
   font-family: helvetica;
   src: url("HelveticaNeue-Light.otf");
 }
-@font-face {
-  font-family: f6;
-  src: url("Geoma_Thin_Demo.otf");
-}
-@font-face {
-  font-family: f7;
-  src: url("Ailerons-Typeface.otf");
-}
+
 
 .menu-item-text {
    color            : black !important;
