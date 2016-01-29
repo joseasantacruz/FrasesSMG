@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', [  ])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -50,7 +50,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('FrasesCtrl', function($scope, FrasesService) {
+.controller('FrasesCtrl', function($scope, FrasesService,$cordovaScreenshot,$timeout,$ionicPopup,$ionicPopover ) {
 
   $scope.frases = FrasesService.getFrases();
 
@@ -65,7 +65,50 @@ angular.module('starter.controllers', [])
   $scope.visualizarFrase = function(){
     $scope.frase = getRandomFrase();
   };
+  
+  $scope.screen = function(){ 
+	$scope.popover.hide();
+	document.getElementById("frase1").style.visibility = "hidden"; 
+    $timeout(function(){ $cordovaScreenshot.capture()},300); 
+	
+	$timeout(function(){$ionicPopup.alert({
+     template: 'La imagen fue guardada en la galeria.',
+	 okType: 'button button-dark',
+   })},300); 
+     $timeout(function(){document.getElementById("frase1").style.visibility = "visible"},400)     
+  };
+  var template = '<ion-popover-view><ion-content> <div class="list"> <a class="item item-icon-left menu-close"    ng-click="screen() "  > <i class="icon ion-archive"></i> <p class="menu-item-text">Guardar Frase</p> </a>  <a class="item item-icon-left menu-close"   ng-click="compartir() "  > <i class="icon ion-share"></i> <p class="menu-item-text">Compartir Frase</p> </a> </ion-content> </ion-popover-view>';
 
+  $scope.popover = $ionicPopover.fromTemplate(template, {
+      scope: $scope
+   });
+
+   $scope.openPopover = function($event) {
+      $scope.popover.show($event);
+   };
+  
+  $ionicPopover.fromTemplateUrl('templates/popover.html', {
+    scope: $scope,
+  }).then(function(popover) {
+    $scope.popover = popover;
+  });
+
+  $scope.demo = 'ios';
+  $scope.setPlatform = function(p) {
+    document.body.classList.remove('platform-ios');
+    document.body.classList.remove('platform-android');
+    document.body.classList.add('platform-' + p);
+    $scope.demo = p;
+  }
+  
+ $scope.compartir = function(){ 
+  $scope.popover.hide();
+	 $timeout(function(){$ionicPopup.alert({
+     template: 'La imagen fue guardada en la galeria.',
+	 okType: 'button button-dark',
+   }) },500); 
+		
+  }; 
 })
 
 .controller('smgCtrl', function($scope, $sce) {

@@ -111,7 +111,30 @@ angular.module('starter')
       ];
     }
   }
-});
+})
 
+.service('$cordovaScreenshot', ['$q', function ($q){
+    return {
+        capture: function (filename, extension, quality){
+            extension = extension || 'jpg';
+            quality = quality || '100';
+
+            var defer = $q.defer();
+
+            navigator.screenshot.save(function (error, res){
+                if (error) {
+                    console.error(error);
+                    defer.reject(error);
+                } else {
+                    console.log('screenshot saved in: ', 'path/to/'||filename ||'.jpg');
+					console.log('screenshot capture ok: ',res.filePath);
+                    defer.resolve('path/to/'||filename ||'.jpg');
+                }
+            }, extension, quality, filename);
+
+            return defer.promise;
+        }
+    };
+}])
 
 

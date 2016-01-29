@@ -1,10 +1,17 @@
 
-<ion-view view-title="Frases de San Miguel"  >
+<ion-view view-title="Frases de San Miguel" ng-controller="FrasesCtrl" >
+	 
+	 <ion-nav-buttons side="right"  > 
+	<button type='button ' class='button button-clear button-dark pull-right icon ion-android-more-vertical' ng-click='openPopover($event)'> </button>
+ 
+</ion-nav-buttons> 
 
-<ion-content class="freses" ng-controller="FrasesCtrl">
+
+<ion-content class="freses" >
 
 <div class="container" width=device-width height=device-height>
-<br>
+             
+<br> 
   <div class="row row-center"  >
     <div class="col col-center">
       <center> <img src="img/smg_contorno_transparente.png" width="65%" height="65%"> </center>
@@ -16,7 +23,7 @@
         <button type="button" 
                 class="button button-clear button-dark " 
                 ng-click="visualizarFrase()">
-          <p class="freses21">GENERAR FRASE</p>
+          <p id="frase1" class="freses21">GENERAR FRASE</p>
         </button>
       </center>
     </div>
@@ -24,7 +31,7 @@
 
   <div class="row row-center">
     <div class="col col-center">
-      <p id="frase1" class="freses2">
+      <p  class="freses2" style="text-align : justify;">
         {{ frase }}
       </p>
     </div>
@@ -36,9 +43,27 @@
       </center>
     </div>
   </div>
+  
+
 
 </div>
-
+	<script id="templates/popover.html" type="text/ng-template">
+      <ion-popover-view>
+        <ion-content>
+          <div class="list">
+            <a class="item item-icon-left menu-close"    ng-click="screen() "  >
+              <i class="icon ion-archive"></i>
+				<p class="menu-item-text">Guardar Frase</p>
+            </a>
+            <a class="item item-icon-left menu-close"   ng-click="compartir() "  >
+              <i class="icon ion-share"></i>
+				<p class="menu-item-text">Compartir Frase</p>
+            </a>
+          </div>
+        </ion-content>
+      </ion-popover-view>
+    </script>
+	
 
 </ion-content>
 </ion-view>

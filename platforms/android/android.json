@@ -31,6 +31,20 @@
                         {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Screenshot\"><param name=\"android-package\" value=\"com.darktalker.cordova.screenshot.Screenshot\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -57,6 +71,9 @@
             "PACKAGE_NAME": "app.frases.smg"
         },
         "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "app.frases.smg"
+        },
+        "com.darktalker.cordova.screenshot": {
             "PACKAGE_NAME": "app.frases.smg"
         }
     },
@@ -109,6 +126,14 @@
                 "cordova.InAppBrowser.open",
                 "window.open"
             ]
+        },
+        {
+            "file": "plugins/com.darktalker.cordova.screenshot/www/Screenshot.js",
+            "id": "com.darktalker.cordova.screenshot.screenshot",
+            "pluginId": "com.darktalker.cordova.screenshot",
+            "merges": [
+                "navigator.screenshot"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -118,6 +143,7 @@
         "cordova-plugin-statusbar": "2.0.0",
         "cordova-plugin-whitelist": "1.2.0",
         "ionic-plugin-keyboard": "1.0.8",
-        "cordova-plugin-inappbrowser": "1.1.2-dev"
+        "cordova-plugin-inappbrowser": "1.1.2-dev",
+        "com.darktalker.cordova.screenshot": "0.1.4"
     }
 }
