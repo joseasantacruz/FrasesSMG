@@ -67,14 +67,6 @@ angular.module('starter', ['ionic', 'starter.controllers' ] )
       }
     }
   })
-  .state('app.pag', {
-    url: '/pag',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/pag.html'
-      }
-    }
-  })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/freses');
