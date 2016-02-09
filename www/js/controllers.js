@@ -48,6 +48,8 @@ angular.module('starter.controllers', [  ])
     if ($state.current.name.indexOf(nombre) !== -1) return 'menu-selected';
     else return '';
   };
+  
+  
 })
 
 .controller('FrasesCtrl', function($scope, FrasesService,$cordovaScreenshot,$timeout,$ionicPopup,$ionicPopover ) {

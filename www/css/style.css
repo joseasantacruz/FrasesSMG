@@ -1,4 +1,23 @@
 /* Empty. Add your own CSS if you like */
+.webPage{
+   width: 100%; 
+    height: 100%; 
+	position: relative; 
+	padding-bottom: 56.25%;
+
+   overflow: hidden;}
+.webPage iframe 
+ { 
+    position: absolute; 
+    display: block; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+	
+	
+  
 .fvd {
   background-color: White;
   -webkit-background-size: cover;
