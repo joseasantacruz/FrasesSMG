@@ -1,4 +1,10 @@
 {
   "name": "Frases de San Miguel",
-  "app_id": ""
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/paginaSanMiguel",
+      "proxyUrl": "http://www.grupofvd.org/feeds/posts/default"
+    }
+  ]
 }

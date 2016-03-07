@@ -1,5 +1,5 @@
 
-<ion-view view-title="Frases de San Miguel" ng-controller="FrasesCtrl" >
+<ion-view view-title="Frases de San Miguel"   >
 	 
 	 <ion-nav-buttons side="right"  > 
 	<button type='button ' class='button button-clear button-dark pull-right icon ion-android-more-vertical' ng-click='openPopover($event)'> </button>
@@ -9,7 +9,7 @@
 
 <ion-content class="freses" >
 
-<div class="container" width=device-width height=device-height>
+<div class="container" width={{width1}} height={{height1}}>
              
 <br> 
   <div class="row row-center"  >
@@ -55,10 +55,12 @@
               <i class="icon ion-archive"></i>
 				<p class="menu-item-text">Guardar Frase</p>
             </a>
-            <a class="item item-icon-left menu-close"   ng-click="compartir() "  >
-              <i class="icon ion-share"></i>
+            <!--
+			<a class="item item-icon-left menu-close"   ng-click="compartir() "  >
+              <i class="icon ion-android-share-alt"></i>
 				<p class="menu-item-text">Compartir Frase</p>
             </a>
+			-->
           </div>
         </ion-content>
       </ion-popover-view>

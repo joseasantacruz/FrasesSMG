@@ -1,5 +1,5 @@
 <ion-view view-title="Grupo FVD"  >
-  <ion-content ng-controller="smgCtrl" class="fvd">
+  <ion-content  class="fvd">
 
   <div class="container" width=device-width height=device-height>
   <h2 class="fvd">Acerca del Grupo FVD</h2> 
@@ -8,13 +8,25 @@
 	  <div class="col"> <center><img src="img\escudo_transparente.png" width="55%" height="55%"></center> </div>
 	</div>
 	<div class="row">
-	  <div class="col"> <center><a class="fvd" href="#" onclick="window.open('http://www.grupofvd.org', '_system', 'location=yes'); return false;">ver página</a>
+	  <div class="col"> <center><a class="fvd" href="#" onclick="window.open('http://www.grupofvd.org', '_self' ); return false;">ver página</a>
 	  </center></div>
 	    
-	</div>
+	</div> 
 	<p class="fvd" >El Grupo FVD es una comunidad de jóvenes llamados a vivir el Carisma de San Miguel Garicoits basado en la obediencia y la disponibilidad, que se resume en el Fiat Voluntas Dei  (Hágase la Voluntad de Dios).</p>
 	<a   class="button button-full button-light button-outline icon icon-right {{bot11}}" ng-click="fvd11()"><h2 class="fvd1">Sus Comienzos</h2></a>
 	 <div ng-bind-html="getHtml(texto11)" ></div>
+	 
+	 <!-- 
+	 <a   class="button button-full button-light button-outline icon icon-right {{bot12}}" ng-click="fvd12()"><h2 class="fvd1">Noticias</h2></a>
+	 <ion-list>
+	   <ion-item ng-repeat="entry in entries" class="item-avatar" ng-click="abrirPagina('{{entry.link}}')" >
+		 <img ng-src="{{ entry.image }}" />
+		 <h2>{{ entry.title }}</h2>
+		 <p>{{ entry.url }}</p>
+		  
+	   </ion-item>
+	 </ion-list>
+	  -->
 	</div>
 	
 	

@@ -7,10 +7,16 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.darktalker.cordova.screenshot": {
+            "PACKAGE_NAME": "app.frases.smg"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "app.frases.smg"
         },
         "cordova-plugin-device": {
+            "PACKAGE_NAME": "app.frases.smg"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "app.frases.smg"
         },
         "cordova-plugin-splashscreen": {
@@ -22,13 +28,10 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "app.frases.smg"
         },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "app.frases.smg"
+        },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "app.frases.smg"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "app.frases.smg"
-        },
-        "com.darktalker.cordova.screenshot": {
             "PACKAGE_NAME": "app.frases.smg"
         }
     },

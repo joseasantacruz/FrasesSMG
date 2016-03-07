@@ -9,7 +9,15 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"Screenshot\"><param name=\"android-package\" value=\"com.darktalker.cordova.screenshot.Screenshot\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
                             "count": 1
                         },
                         {
@@ -25,15 +33,11 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Screenshot\"><param name=\"android-package\" value=\"com.darktalker.cordova.screenshot.Screenshot\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -44,7 +48,7 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 1
+                            "count": 2
                         }
                     ]
                 }
@@ -52,10 +56,16 @@
         }
     },
     "installed_plugins": {
+        "com.darktalker.cordova.screenshot": {
+            "PACKAGE_NAME": "app.frases.smg"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "app.frases.smg"
         },
         "cordova-plugin-device": {
+            "PACKAGE_NAME": "app.frases.smg"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "app.frases.smg"
         },
         "cordova-plugin-splashscreen": {
@@ -67,30 +77,40 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "app.frases.smg"
         },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "app.frases.smg"
+        },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "app.frases.smg"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "app.frases.smg"
-        },
-        "com.darktalker.cordova.screenshot": {
             "PACKAGE_NAME": "app.frases.smg"
         }
     },
     "dependent_plugins": {},
     "modules": [
         {
+            "file": "plugins/com.darktalker.cordova.screenshot/www/Screenshot.js",
+            "id": "com.darktalker.cordova.screenshot.screenshot",
+            "merges": [
+                "navigator.screenshot"
+            ]
+        },
+        {
             "file": "plugins/cordova-plugin-device/www/device.js",
             "id": "cordova-plugin-device.device",
-            "pluginId": "cordova-plugin-device",
             "clobbers": [
                 "device"
             ]
         },
         {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
             "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
             "id": "cordova-plugin-splashscreen.SplashScreen",
-            "pluginId": "cordova-plugin-splashscreen",
             "clobbers": [
                 "navigator.splashscreen"
             ]
@@ -98,7 +118,6 @@
         {
             "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
             "id": "cordova-plugin-statusbar.statusbar",
-            "pluginId": "cordova-plugin-statusbar",
             "clobbers": [
                 "window.StatusBar"
             ]
@@ -106,44 +125,22 @@
         {
             "file": "plugins/cordova-plugin-whitelist/whitelist.js",
             "id": "cordova-plugin-whitelist.whitelist",
-            "pluginId": "cordova-plugin-whitelist",
             "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+            "id": "cordova-plugin-x-socialsharing.SocialSharing",
+            "clobbers": [
+                "window.plugins.socialsharing"
+            ]
         },
         {
             "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
             "id": "ionic-plugin-keyboard.keyboard",
-            "pluginId": "ionic-plugin-keyboard",
             "clobbers": [
                 "cordova.plugins.Keyboard"
             ],
             "runs": true
-        },
-        {
-            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-            "id": "cordova-plugin-inappbrowser.inappbrowser",
-            "pluginId": "cordova-plugin-inappbrowser",
-            "clobbers": [
-                "cordova.InAppBrowser.open",
-                "window.open"
-            ]
-        },
-        {
-            "file": "plugins/com.darktalker.cordova.screenshot/www/Screenshot.js",
-            "id": "com.darktalker.cordova.screenshot.screenshot",
-            "pluginId": "com.darktalker.cordova.screenshot",
-            "merges": [
-                "navigator.screenshot"
-            ]
         }
-    ],
-    "plugin_metadata": {
-        "cordova-plugin-console": "1.0.2",
-        "cordova-plugin-device": "1.1.0",
-        "cordova-plugin-splashscreen": "3.0.0",
-        "cordova-plugin-statusbar": "2.0.0",
-        "cordova-plugin-whitelist": "1.2.0",
-        "ionic-plugin-keyboard": "1.0.8",
-        "cordova-plugin-inappbrowser": "1.1.2-dev",
-        "com.darktalker.cordova.screenshot": "0.1.4"
-    }
+    ]
 }

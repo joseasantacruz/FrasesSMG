@@ -29,14 +29,15 @@ angular.module('starter', ['ionic', 'starter.controllers' ] )
     url: '/app',
     abstract: true,
     templateUrl: 'templates/menu.html',
-    controller: 'AppCtrl'
+    controller: 'MenuController'
   })
 
   .state('app.sanmiguel', {
     url: '/sanmiguel',
     views: {
       'menuContent': {
-        templateUrl: 'templates/sanmiguel.html'
+        templateUrl: 'templates/sanmiguel.html',
+		controller: 'smgCtrl'
       }
     }
   })
@@ -45,7 +46,8 @@ angular.module('starter', ['ionic', 'starter.controllers' ] )
       url: '/fvd',
       views: {
         'menuContent': {
-          templateUrl: 'templates/fvd.html'
+          templateUrl: 'templates/fvd.html',
+			controller: 'smgCtrl'
         }
       }
     })
@@ -54,7 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers' ] )
       views: {
         'menuContent': {
           templateUrl: 'templates/freses.html',
-          //controller: 'PlaylistsCtrl'
+          controller: 'FrasesCtrl'
         }
       }
     })
@@ -63,15 +65,7 @@ angular.module('starter', ['ionic', 'starter.controllers' ] )
     url: '/desa',
     views: {
       'menuContent': {
-        templateUrl: 'templates/desarrollo.html'
-      }
-    }
-  })
-  .state('app.pag', {
-    url: '/pag',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/pag.html'
+        templateUrl: 'templates/desarrollo.html' 
       }
     }
   })
