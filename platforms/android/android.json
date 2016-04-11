@@ -59,9 +59,6 @@
         "com.darktalker.cordova.screenshot": {
             "PACKAGE_NAME": "app.frases.smg"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "app.frases.smg"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "app.frases.smg"
         },
